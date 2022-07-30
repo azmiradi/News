@@ -3,10 +3,11 @@ plugins {
     id(Plugins.jetbrainsKotlin)
     id(Plugins.hilt)
     id(Plugins.navigation)
-    id("kotlin-kapt")
+    kotlin("kapt")
 }
 
 android {
+
     compileSdk = Versions.compileSDK
 
     defaultConfig {
@@ -15,8 +16,11 @@ android {
         targetSdk = Versions.targetSDK
         versionCode = Versions.appVersionCode
         versionName = Versions.appVersionName
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
+        buildConfigField("String", "NEWS_KEY", "\"c045de1344e24899bffd2bb6d9c08bd5\"")
+        buildConfigField("String", "BASE_URL", "\"https://newsapi.org/\"")
     }
     buildTypes {
         getByName("release") {
@@ -25,11 +29,11 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "1.8"
     }
 }
 
@@ -86,6 +90,4 @@ dependencies {
     androidTestImplementation(Deps.Test.truth)
     androidTestImplementation(Deps.Test.extJunit)
     androidTestImplementation(Deps.Test.espresso)
-
-
 }

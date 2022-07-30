@@ -28,7 +28,7 @@ object Versions {
     const val viewModelVersion = "2.5.1"
     const val roomVersion = "2.4.3"
     const val coroutinesVersion = "1.6.2"
-    const val hiltVersion = "2.40.5"
+    const val hiltVersion = "2.38.1"
     const val retrofitVersion = "2.9.0"
     const val okhttpVersion = "4.9.2"
     const val glideVersion = "4.12.0"
@@ -103,7 +103,7 @@ object Deps {
 
     object Hilt {
         const val android = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
-        const val compiler = "com.google.dagger:hilt-compiler:${Versions.hiltVersion}"
+        const val compiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltVersion}"
         const val hiltPlugin =
             "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
 
