@@ -9,20 +9,17 @@ import java.io.Serializable
 data class NewsResponse(
 
     @SerializedName("totalResults")
-    val totalResults: Int? = null,
+	val totalResults: Int? = null,
 
     @SerializedName("articles")
-    val articles: List<Article?>? = null,
+	val articles: List<Article?>? = null,
 
     @SerializedName("status")
-    val status: String? = null,
-
-    @SerializedName("message")
-    val errorMessage: String? = null
+	val status: String? = null
 )
 
 
-@Entity(tableName = "articles", indices = [Index(value = ["url"], unique = true)])
+@Entity(tableName = "articles",indices = [Index(value = ["url"], unique = true)])
 data class Article(
     @PrimaryKey(autoGenerate = true)
     val id: Int? = null,
