@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/TEMP/.gradle/caches/transforms-3/9aaaf7f52a9efdd1663078de4a9d19f9/transformed/jetified-ImageSlideshow-0.1.0/res/drawable/default_selected_dot.xml" value="0.1555" />
+        <entry key="..\:/Users/TEMP/.gradle/caches/transforms-3/a8dea71b9b2e2b60265898e75cb5dfe2/transformed/jetified-banner-1.04/res/layout/banner_list_item.xml" value="0.245018115942029" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/bottom_nav_color.xml" value="0.2055" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/circular_gradient.xml" value="0.1995" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_bookmark.xml" value="0.1615" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_home.xml" value="0.1615" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_search.xml" value="0.1615" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_setting.xml" value="0.1615" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/banner_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/banner_view.xml" value="0.25" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/fragment_bookmark.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/fragment_details.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/fragment_search.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/fragment_setting.xml" value="0.20244565217391305" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/home_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/latest_news.xml" value="0.25" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

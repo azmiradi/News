@@ -7,8 +7,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import javax.inject.Inject
 
-class GetLocalArticlesUseCase(private val repository: NewsRepository) {
+class GetLocalArticlesUseCase @Inject constructor (private val repository: NewsRepository) {
     operator fun invoke() = flow<List<Article>> {
         repository.getLocalArticle().collect {
             emit(it)

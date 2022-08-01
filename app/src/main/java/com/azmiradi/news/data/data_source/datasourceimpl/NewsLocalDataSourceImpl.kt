@@ -4,8 +4,9 @@ import com.azmiradi.news.data.data_source.datasource.NewsLocalDataSource
 import com.azmiradi.news.data.database.NewsDao
 import com.azmiradi.news.data.model.Article
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-class NewsLocalDataSourceImpl(
+class NewsLocalDataSourceImpl @Inject constructor(
     private val newsDao: NewsDao
 ) : NewsLocalDataSource {
 

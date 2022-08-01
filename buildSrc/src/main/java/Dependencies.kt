@@ -7,7 +7,7 @@ object Plugins {
     const val jetbrainsKotlin = "org.jetbrains.kotlin.android"
 
     const val hilt = "dagger.hilt.android.plugin"
-    const val navigation = "androidx.navigation.safeargs.kotlin"
+    const val navigation = "androidx.navigation.safeargs"
 }
 
 object Versions {
@@ -24,7 +24,7 @@ object Versions {
     const val androidGradle = "7.1.2"
 
     //Libs
-    const val kotlin = "1.6.0"
+    const val kotlin = "1.6.21"
     const val viewModelVersion = "2.5.1"
     const val roomVersion = "2.4.3"
     const val coroutinesVersion = "1.6.2"
@@ -33,11 +33,13 @@ object Versions {
     const val okhttpVersion = "4.9.2"
     const val glideVersion = "4.12.0"
     const val intuitVersion = "1.0.6"
-    const val navVersion = "2.5.1"
+    const val navVersion = "2.3.5"
     const val androidx = "1.8.0"
     const val appCompat = "1.4.2"
     const val material = "1.6.1"
     const val constraintLayout = "2.1.4"
+    const val spotDialogVersion = "0.7@aar"
+    const val slider = "1.0.3"
 
     //testLib
     const val jUnit = "4.13.2"
@@ -64,6 +66,10 @@ object Deps {
         const val material = "com.google.android.material:material:${Versions.material}"
         const val constraintLayout =
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        const val spotDialog = "com.github.d-max:spots-dialog:${Versions.spotDialogVersion}"
+        const val slider = "com.github.MoeidHeidari:banner:1.04"
+        const val indicator ="me.relex:circleindicator:2.1.6"
+
     }
 
     object Test {
@@ -134,6 +140,8 @@ object Deps {
     object Navigation {
         const val fragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navVersion}"
         const val ui = "androidx.navigation:navigation-ui-ktx:${Versions.navVersion}"
+        const val features ="androidx.navigation:navigation-dynamic-features-fragment:${Versions.navVersion}"
+
         const val navigationPlugin =
             "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navVersion}"
     }

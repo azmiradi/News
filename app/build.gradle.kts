@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
+
 plugins {
     id(Plugins.androidApp)
     id(Plugins.jetbrainsKotlin)
@@ -27,7 +29,9 @@ android {
             isMinifyEnabled = false
         }
     }
-
+    buildFeatures {
+        dataBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -43,12 +47,13 @@ dependencies {
 
     implementation(Deps.MaterialDesign.material)
     implementation(Deps.MaterialDesign.constraintLayout)
+    implementation(Deps.MaterialDesign.spotDialog)
+    implementation(Deps.MaterialDesign.slider)
 
     implementation(Deps.ViewModel.viewModel)
     implementation(Deps.ViewModel.liveData)
     implementation(Deps.ViewModel.savedState)
-
-    implementation(Deps.Room.runtime)
+     implementation(Deps.Room.runtime)
     kapt(Deps.Room.compiler)
     implementation(Deps.Room.extensions)
 
@@ -72,7 +77,7 @@ dependencies {
 
     implementation(Deps.Navigation.fragment)
     implementation(Deps.Navigation.ui)
-
+    implementation(Deps.Navigation.features)
 
     //testImplementation
     testImplementation(Deps.Test.core)

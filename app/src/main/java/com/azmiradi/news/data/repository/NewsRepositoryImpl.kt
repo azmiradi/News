@@ -6,8 +6,10 @@ import com.azmiradi.news.data.model.Article
 import com.azmiradi.news.data.model.NewsResponse
 import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
+import javax.inject.Inject
 
-class NewsRepositoryImpl constructor(
+class NewsRepositoryImpl
+@Inject constructor(
     private val remoteDataSource: NewsRemoteDataSource,
     private val localDataSource: NewsLocalDataSource
 ) : NewsRepository {
@@ -20,7 +22,7 @@ class NewsRepositoryImpl constructor(
     }
 
     override fun getLocalArticle(): Flow<List<Article>> {
-         return localDataSource.getArticles()
+        return localDataSource.getArticles()
     }
 
     override suspend fun deleteArticle(article: Article): Int {

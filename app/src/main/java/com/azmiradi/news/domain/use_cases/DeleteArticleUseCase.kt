@@ -5,8 +5,9 @@ import com.azmiradi.news.data.repository.NewsRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import javax.inject.Inject
 
-class DeleteArticleUseCase(private val repository: NewsRepository) {
+class DeleteArticleUseCase @Inject constructor (private val repository: NewsRepository) {
     operator fun invoke(article: Article) = flow<Boolean> {
         val deletedArticleID = repository.deleteArticle(article)
         if (deletedArticleID != 0)

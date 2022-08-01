@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface ApiServices {
 
-    @GET("v2/everything")
+    @GET("v2/top-headlines")
     suspend fun getNews(
         @Query("q") querySearch: String?=null,
         @Query("country") country: String?=null,

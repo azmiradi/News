@@ -2,46 +2,42 @@ package com.azmiradi.news.domain.use_cases
 
 import com.azmiradi.news.data.model.Article
 import com.azmiradi.news.data.repository.NewsRepository
-import com.azmiradi.news.utils.Resource
+import com.azmiradi.news.utils.Constants.SUCCESS_CODE
 import com.bumptech.glide.load.HttpException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import java.io.IOException
+import javax.inject.Inject
 
-class GetNewsUseCase(private val repository: NewsRepository) {
-    operator fun invoke()
-            : Flow<Resource<List<Article?>>> = flow {
+class GetNewsUseCase @Inject constructor (private val repository: NewsRepository) {
+    operator fun invoke(querySearch: String? = null,
+                        country: String? = null,
+                        sources: String? = null,)
+            : Flow<List<Article?>?> = flow {
         try {
-            emit(Resource.Loading())
-            val response = repository.getNews()
+            val response = repository.getNews(querySearch, country, sources)
 
-            response.body()?.let { it ->
-                it.errorMessage?.let {
-                    emit(Resource.Error(it))
-                    return@flow
+            if (response.code() == SUCCESS_CODE) {
+                response.body()?.let { it ->
+                    emit(it.articles)
                 }
-                it.articles?.let {
-                    emit(Resource.Success(it))
-                    return@flow
+                return@flow
+            } else {
+                response.errorBody()?.let {
+                    throw Exception(it.string())
+
                 }
-                emit(Resource.Error<List<Article?>>("Not Found News"))
+                throw Exception(response.message())
             }
-            emit(
-                Resource.Error<List<Article?>>(
-                    response.errorBody()?.string()
-                        ?: "Something went wrong please try again later!"
-                )
-            )
+
         } catch (http: HttpException) {
-            emit(
-                Resource.Error(
-                    http.localizedMessage ?: "Something went wrong please try again later!"
-                )
-            )
+            throw Exception(http.message)
+
         } catch (io: IOException) {
-            emit(Resource.Error("Please check your internet connection and try again later."))
+            throw Exception(io.message)
+
         }
     }.flowOn(Dispatchers.IO)
 }

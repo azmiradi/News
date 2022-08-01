@@ -4,3 +4,6 @@ object Constants {
     const val SUCCESS_CODE=200
     const val OK="ok"
 }
+enum class NewsSections{
+    TopBanner, LatestNews
+}
