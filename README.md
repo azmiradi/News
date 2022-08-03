@@ -9,11 +9,10 @@ News app is designed to helps people to read last news.
 
  ###### **Tecgnologes uses in it.**
  * Kotlin.
- * Jitpack Compose for UI
  * MVVM Design Pattern
  * Hilt
  * Room Database
- *live Data
+ * live Data
  * Coroutines
  * Retrofit
  * okhttp3
