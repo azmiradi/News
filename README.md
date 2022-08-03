@@ -29,7 +29,7 @@ News app is designed to helps people to read last news.
  
  
 | Home | Details | Bookmark | Search |
-| --------------- | ---------------- | 
+| --------------- | ---------------- | ---------------- | ---------------- | 
 | <img src="screenshots/home.jpg" height="480"> | <img src="screenshots/details.jpg" height="480"> | <img src="screenshots/bookmark.jpg" height="480"> | <img src="search.jpg" height="480"> |
 
 <!--Galaxy A 72-->
