@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="article"
+            type="com.azmiradi.news.data.model.Article" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -16,27 +18,21 @@
             android:layout_height="match_parent">
 
 
-            <ImageView
+            <include
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="fitXY"
                 android:id="@+id/image"
-                android:src="@drawable/ic_home"
-                android:contentDescription="@string/app_name" />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/circular_gradient"
-
+                layout="@layout/news_image"
                 />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:lines="2"
                 android:textColor="@color/white"
-                android:textDirection="rtl"
-                android:id="@+id/address"
+                android:id="@+id/title"
+                android:text="@{article.title}"
                 android:textSize="@dimen/_12ssp"
                 android:fontFamily="@font/noto_medium"
                 android:layout_marginEnd="@dimen/_20sdp"
@@ -55,17 +51,6 @@
                 android:layout_marginStart="@dimen/_20sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:id="@+id/bookmark"
-                app:tint="@color/white"
-                android:src="@drawable/ic_bookmark"
-                android:layout_marginEnd="@dimen/_20sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:contentDescription="@string/bookmark" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

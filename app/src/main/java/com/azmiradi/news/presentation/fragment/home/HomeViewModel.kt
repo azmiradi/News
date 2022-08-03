@@ -2,20 +2,25 @@ package com.azmiradi.news.presentation.fragment.home
 
 import androidx.lifecycle.*
 import com.azmiradi.news.data.model.Article
+import com.azmiradi.news.domain.use_cases.GetLocalArticlesUseCase
 import com.azmiradi.news.domain.use_cases.GetNewsUseCase
+import com.azmiradi.news.domain.use_cases.SaveArticleUseCase
 import com.azmiradi.news.utils.DataState
 import com.azmiradi.news.utils.NewsSections
+import com.azmiradi.news.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.*
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(private val getNewsUseCase: GetNewsUseCase) : ViewModel() {
+class HomeViewModel @Inject constructor(
+    private val getNewsUseCase: GetNewsUseCase,
+    private val saveArticlesUseCase: SaveArticleUseCase
+) : ViewModel() {
 
-    private var newsJob: Job? = null
-    private val _allNewsState =MutableLiveData(DataState<Map<String, List<Article>?>>())
-
+    private var job: Job? = null
+    private val _allNewsState = MutableLiveData(DataState<Map<String, List<Article>?>>())
     val allNewsState: LiveData<DataState<Map<String, List<Article>?>>> = _allNewsState
 
     fun getNews() {
@@ -24,8 +29,8 @@ class HomeViewModel @Inject constructor(private val getNewsUseCase: GetNewsUseCa
         val allEgyptNews = getNewsUseCase(country = "eg")
         val bBCNewsNextWebNews = getNewsUseCase(sources = "bbc-news,the-next-web")
 
-        newsJob?.cancel()
-        newsJob = combine(
+        job?.cancel()
+        job = combine(
             allEgyptNews, bBCNewsNextWebNews
         )
         { egyptNews, otherNews ->
@@ -36,6 +41,5 @@ class HomeViewModel @Inject constructor(private val getNewsUseCase: GetNewsUseCa
             _allNewsState.value = DataState(error = error.message.toString())
         }.launchIn(viewModelScope)
     }
-
 
 }

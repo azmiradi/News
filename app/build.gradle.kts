@@ -47,7 +47,6 @@ dependencies {
 
     implementation(Deps.MaterialDesign.material)
     implementation(Deps.MaterialDesign.constraintLayout)
-    implementation(Deps.MaterialDesign.spotDialog)
     implementation(Deps.MaterialDesign.slider)
 
     implementation(Deps.ViewModel.viewModel)
@@ -56,6 +55,7 @@ dependencies {
      implementation(Deps.Room.runtime)
     kapt(Deps.Room.compiler)
     implementation(Deps.Room.extensions)
+    implementation(Deps.Datastore.core)
 
     implementation(Deps.Coroutines.core)
     implementation(Deps.Coroutines.android)

@@ -1,6 +1,5 @@
-package com.azmiradi.news.presentation.fragment.home
+package com.azmiradi.news.presentation.adaptors
 
-import android.text.format.DateUtils
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -8,16 +7,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.azmiradi.news.R
 import com.azmiradi.news.data.model.Article
-import com.azmiradi.news.databinding.LatestNewsBinding
+import com.azmiradi.news.databinding.BannerItemBinding
 import com.azmiradi.news.utils.convertDateFormate
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.CenterCrop
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import java.text.ParseException
-import java.text.SimpleDateFormat
-import java.util.*
+import dagger.hilt.android.scopes.FragmentScoped
+import javax.inject.Inject
 
-class LatestNewsAdapter : RecyclerView.Adapter<LatestNewsAdapter.NewsViewHolder>() {
+@FragmentScoped
+class BannerSliderAdapter @Inject constructor(): RecyclerView.Adapter<BannerSliderAdapter.NewsViewHolder>() {
 
     private val callback = object : DiffUtil.ItemCallback<Article>() {
         override fun areItemsTheSame(oldItem: Article, newItem: Article): Boolean {
@@ -34,7 +31,7 @@ class LatestNewsAdapter : RecyclerView.Adapter<LatestNewsAdapter.NewsViewHolder>
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
-        val binding = LatestNewsBinding
+        val binding = BannerItemBinding
             .inflate(LayoutInflater.from(parent.context), parent, false)
         return NewsViewHolder(binding)
     }
@@ -52,16 +49,15 @@ class LatestNewsAdapter : RecyclerView.Adapter<LatestNewsAdapter.NewsViewHolder>
     }
 
     inner class NewsViewHolder(
-        val binding: LatestNewsBinding
+        val binding: BannerItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(article: Article) {
-            val date = article.publishedAt.toString().convertDateFormate()
-            binding.date.text=date
-            binding.address.text = article.title
-            Glide.with(binding.image.context).load(article.urlToImage)
+            binding.date.text= article.publishedAt.toString().convertDateFormate()
+            binding.article = article
+
+            Glide.with(binding.image.image.context).load(article.urlToImage)
                 .placeholder(R.drawable.ic_loading).error(R.drawable.ic_no_image)
-                .transform(CenterCrop(), RoundedCorners(15))
-                .into(binding.image)
+                .into(binding.image.image)
             binding.root.setOnClickListener {
                 onItemClick?.let {
                     it(article)

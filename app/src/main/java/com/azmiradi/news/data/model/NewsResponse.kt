@@ -26,8 +26,10 @@ data class NewsResponse(
 data class Article(
     @PrimaryKey(autoGenerate = true)
     val id: Int? = null,
+
     @SerializedName("publishedAt")
-    val publishedAt: String? = null,
+    var publishedAt: String? = null,
+
     @SerializedName("author")
     val author: String? = null,
 

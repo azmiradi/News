@@ -12,6 +12,30 @@
         android:layout_height="match_parent"
         tools:context=".presentation.fragment.home.HomeFragment">
 
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            android:id="@+id/progress"
+            app:layout_constraintStart_toStartOf="parent"
+            android:theme="@style/Theme.News.WhiteAccent"
+            />
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_20sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/news_title"
@@ -20,6 +44,7 @@
             android:fontFamily="@font/noto_bold"
             android:gravity="start"
             android:padding="@dimen/_10sdp"
+            android:visibility="gone"
             android:text="@string/news"
             android:textColor="@color/black"
             android:textSize="@dimen/_20ssp"
@@ -44,6 +69,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/noto_medium"
             android:gravity="start"
+            android:visibility="gone"
             android:padding="@dimen/_10sdp"
             android:text="@string/latest_news"
             android:textColor="@color/black"

@@ -38,8 +38,8 @@ object Versions {
     const val appCompat = "1.4.2"
     const val material = "1.6.1"
     const val constraintLayout = "2.1.4"
-    const val spotDialogVersion = "0.7@aar"
-    const val slider = "1.0.3"
+    const val slider = "1.04"
+    const val datastore="1.0.0"
 
     //testLib
     const val jUnit = "4.13.2"
@@ -66,9 +66,7 @@ object Deps {
         const val material = "com.google.android.material:material:${Versions.material}"
         const val constraintLayout =
             "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-        const val spotDialog = "com.github.d-max:spots-dialog:${Versions.spotDialogVersion}"
-        const val slider = "com.github.MoeidHeidari:banner:1.04"
-        const val indicator ="me.relex:circleindicator:2.1.6"
+         const val slider = "com.github.MoeidHeidari:banner:${Versions.slider}"
 
     }
 
@@ -90,6 +88,9 @@ object Deps {
             "androidx.lifecycle:lifecycle-viewmodel-savedstate:${Versions.viewModelVersion}"
     }
 
+    object Datastore{
+      const val core= "androidx.datastore:datastore-preferences:${Versions.datastore}"
+    }
     object Room {
         const val runtime = "androidx.room:room-runtime:${Versions.roomVersion}"
         const val compiler = "androidx.room:room-compiler:${Versions.roomVersion}"

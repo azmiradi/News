@@ -10,6 +10,7 @@
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_bookmark.xml" value="0.1615" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_home.xml" value="0.1615" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_loading.xml" value="0.121" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_search.xml" value="0.1615" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/drawable/ic_setting.xml" value="0.1615" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
@@ -22,6 +23,7 @@
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/fragment_setting.xml" value="0.20244565217391305" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/home_fragment.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/latest_news.xml" value="0.25" />
+        <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/layout/news_image.xml" value="0.22418478260869565" />
         <entry key="..\:/Users/TEMP/AndroidStudioProjects/News/app/src/main/res/menu/bottom_menu.xml" value="0.25" />
       </map>
     </option>

@@ -1,6 +1,15 @@
 package com.azmiradi.news.utils
+import androidx.datastore.preferences.preferencesDataStore
 
+import android.app.Application
+import android.content.Context
 import android.text.format.DateUtils
+import android.view.View
+import android.widget.Toast
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import com.azmiradi.news.R
+import com.bumptech.glide.Glide
 import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.*
@@ -18,3 +27,10 @@ fun String.convertDateFormate(format: String = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"): 
             "unknown"
     }
 }
+
+fun Context.showToast(message: String) {
+    Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+}
+
+val Application.datastore: DataStore<Preferences>
+        by preferencesDataStore(name = Constants.DATASTORE_NAME)

@@ -4,6 +4,15 @@
 
     <data>
 
+        <variable
+            name="isBookmark"
+            type="Boolean" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="article"
+            type="com.azmiradi.news.data.model.Article" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -20,19 +29,20 @@
                 android:id="@+id/image"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="match_parent"
-                 android:contentDescription="@string/app_name"
+                android:contentDescription="@string/app_name"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_home"
                 app:layout_constraintBottom_toBottomOf="parent"
-                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/address"
+                android:id="@+id/title"
                 android:layout_width="0dp"
-                android:layout_marginStart="@dimen/_15sdp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@{article.title}"
                 app:layout_constraintBottom_toTopOf="@+id/date"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/image"
@@ -46,7 +56,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/bookmark"
                 app:layout_constraintStart_toEndOf="@+id/image"
-                app:layout_constraintTop_toBottomOf="@+id/address" />
+                app:layout_constraintTop_toBottomOf="@+id/title" />
 
             <ImageView
                 android:id="@+id/bookmark"
@@ -55,9 +65,10 @@
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:contentDescription="@string/bookmark"
                 android:src="@drawable/ic_bookmark"
+                android:visibility="@{isBookmark? View.VISIBLE : View.GONE }"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@+id/title"
                 app:tint="@color/old_gold" />
 
 
