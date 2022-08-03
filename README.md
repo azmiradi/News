@@ -28,8 +28,8 @@ News app is designed to helps people to read last news.
 *   **[Download latest debug APK here] (https://github.com/azmiradi/News/blob/master/app-debug.apk)**.
  
  
-| news webview | saved news |
+| Home | Details | Bookmark | Search |
 | --------------- | ---------------- | 
-| <img src="news_details_web_view.png" height="480"> | <img src="saved_news_screen.png" height="480"> |
+| <img src="screenshots/home.jpg" height="480"> | <img src="screenshots/details.jpg" height="480"> | <img src="screenshots/bookmark.jpg" height="480"> | <img src="search.jpg" height="480"> |
 
 <!--Galaxy A 72-->
