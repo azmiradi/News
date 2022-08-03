@@ -1,0 +1,253 @@
+{
+  "status":"ok",
+  "totalResults":19,
+  "articles":[
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC Sport",
+      "title":"Argentina, Chile, Uruguay & Paraguay in World Cup bid",
+      "description":"Argentina, Chile, Uruguay and Paraguay submit a joint bid to host the World Cup in 2023.",
+      "url":"http://www.bbc.co.uk/sport/football/62404090",
+      "urlToImage":"https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/D6C8/production/_117348945_gettyimages-999564000.jpg",
+      "publishedAt":"2022-08-03T07:22:17.0161107Z",
+      "content":"Representatives of Conmebol and Argentina, Chile, Uruguay and Paraguay are joining forces to bid for the 2030 World Cup\r\nArgentina, Chile, Uruguay and Paraguay have submitted a joint bid to host the … [+1186 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Taiwan puts the ball firmly in Xi Jinping's court",
+      "description":"Nancy Pelosi's visit to the Taipei has put an increasingly assertive China on the back foot.",
+      "url":"http://www.bbc.co.uk/news/world-asia-62402935",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/779A/production/_126181603_gettyimages-1390243942.jpg",
+      "publishedAt":"2022-08-03T05:52:19.0168925Z",
+      "content":"By Stephen McDonellBBC News, Beijing\r\nThe danger with escalation is that it is hard to pull back.\r\nNow that US House Speaker Nancy Pelosi has managed to visit Taiwan - the highest-ranking American of… [+4006 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Kansas abortion vote: Pro-choice campaigners score major win",
+      "description":"Voters overwhelmingly decide they do not wish to amend the state constitution to assert there is no right to abortion.",
+      "url":"http://www.bbc.co.uk/news/world-us-canada-62402625",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/83B3/production/_115651733_breaking-large-promo-nc.png",
+      "publishedAt":"2022-08-03T02:52:19.5521741Z",
+      "content":"Kansas voters have chosen to uphold abortion rights in the first electoral test of the deeply polarising issue since the US Supreme Court allowed states to ban the procedure outright.\r\nVoters overwhe… [+283 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Ayman al-Zawahiri: US warns of possible retaliation over al-Qaeda death",
+      "description":"Be vigilant for possible anti-American violence, the US warns citizens after killing al-Qaeda's chief.",
+      "url":"http://www.bbc.co.uk/news/world-us-canada-62402612",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/13804/production/_84867897_dbdb4a7f-acc4-4e10-85a4-e289237dad5e.jpg",
+      "publishedAt":"2022-08-03T02:07:21.0433111Z",
+      "content":"The US has urged its citizens to be vigilant against possible anti-American violence abroad following the killing of al-Qaeda leader Ayman al-Zawahiri. \r\nHis death could prompt al-Qaeda supporters or… [+2883 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"All-women team breaks record rowing to Hawaii",
+      "description":"The friends, who had no prior experience of ocean rowing, beat last year's record holders from the UK.",
+      "url":"http://www.bbc.co.uk/news/world-us-canada-62397500",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/8D70/production/_126180263_p0cqq434.jpg",
+      "publishedAt":"2022-08-03T01:22:19.2303525Z",
+      "content":"Libby Costello, Sophia Denison-Johnston, Brooke Downes and Adrienne Smith travelled 2,400 nautical miles.\r\nThe four friends, who had no prior experience of ocean rowing, beat last year's record holde… [+14 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Nancy Pelosi visit: China summons US ambassador to Beijing in protest",
+      "description":"The top US Democrat Nancy Pelosi arrives in Taiwan as part of a tour of Asia, despite sharp warnings from China.",
+      "url":"http://www.bbc.co.uk/news/live/world-asia-62377353",
+      "urlToImage":"https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
+      "publishedAt":"2022-08-02T23:37:33.6057532Z",
+      "content":"Nancy Pelosis visit\r\nis garnering a fair bit of bipartisan support from Republican opponents whod\r\nusually be very unlikely to count themselves among her fanbase.\r\nWith former\r\nsenior officials from … [+1529 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Ayman al-Zawahiri: How US strike could kill al-Qaeda leader - but not his family",
+      "description":"Extremely precise missile use and study of Zawahiri's habits were key to the targeted US killing.",
+      "url":"http://www.bbc.co.uk/news/world-us-canada-62400923",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/FDC6/production/_126166946_fziaeijxoaeke5c.jpg",
+      "publishedAt":"2022-08-02T23:37:22.3873511Z",
+      "content":"By Bernd Debusmann Jr, BBC News, Washington&amp; Chris Partridge, BBC weapons expert\r\nJust over an hour after sunrise on 31 July, long-time al-Qaeda boss Aman Al-Zawahiri walked out onto the balcony … [+5744 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Stephen King testifies against merger of publishing giants",
+      "description":"The cult author said claims the tie-up would not hinder competition were \"a little bit ridiculous\".",
+      "url":"http://www.bbc.co.uk/news/world-us-canada-62402141",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/FEB8/production/_126180256_king.jpg",
+      "publishedAt":"2022-08-02T22:52:16.335792Z",
+      "content":"American horror novelist Stephen King is taking on a new monster: corporate consolidation. \r\nThe author was the star witness in an antitrust trial to block the two biggest US publishers' $2.2bn merge… [+2221 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC News",
+      "title":"Ukraine war: First grain ship out of Ukraine reaches Turkish waters",
+      "description":"It is the first grain shipment to leave Ukraine by sea since Russia began blockading its ports in February.",
+      "url":"http://www.bbc.co.uk/news/world-europe-62401342",
+      "urlToImage":"https://ichef.bbci.co.uk/news/1024/branded_news/12CBB/production/_126178967_mediaitem126178963.jpg",
+      "publishedAt":"2022-08-02T21:22:17.339559Z",
+      "content":"By Elsa MaishmanBBC News\r\nThe first grain ship to depart Ukraine since Russia invaded has arrived at Turkey's Bosphorus strait.\r\nThe Razoni, which is carrying 26,000 tonnes of corn, will be inspected… [+1644 chars]"
+    },
+    {
+      "source":{
+        "id":"bbc-news",
+        "name":"BBC News"
+      },
+      "author":"BBC Sport",
+      "title":"Woods turned down $700-$800m LIV offer - Norman",
+      "description":"Tiger Woods rejected an offer of $700m to $800m offer to join the new Saudi-backed LIV Golf Series, says Greg Norman.",
+      "url":"http://www.bbc.co.uk/sport/golf/62390283",
+      "urlToImage":"https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/BA46/production/_126168674_gettyimages-1408862040.jpg",
+      "publishedAt":"2022-08-02T17:52:19.793155Z",
+      "content":"I disagree with the LIV Golf Series - Woods\r\nTiger Woods turned down in the region of $700m to $800m to join the new Saudi-backed LIV Golf Series, says chief executive Greg Norman.\r\nA host of top pla… [+1901 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"Cate Lawrence",
+      "title":"We need to talk about space junk",
+      "description":"The amount of space junk is increasing as more space tech enters the skies. What is the risk and what do we do about it?",
+      "url":"http://thenextweb.com/news/governments-and-private-companies-need-to-take-responsibility-for-space-junk",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/shift?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F08%2FUntitled-design-21.png&signature=b5aa9ffff83584f46de6a55658aa1eb8",
+      "publishedAt":"2022-08-02T14:52:05Z",
+      "content":"This week farmers found big chunks of metal from a SpaceX Crew-1 Trunk in a remote paddock in rural Australia. While its not an everyday occurrence, rocket body reentries (parts of space debris retur… [+4705 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"Ben Dickson",
+      "title":"Large language models can’t plan, even if they write fancy essays",
+      "description":"This article is part of our coverage of the latest in AI research.\r\n\r\nLarge language models like GPT-3 have advanced to the point that it has become difficult to measure the limits ...",
+      "url":"http://thenextweb.com/news/large-language-models-cant-plan",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/neural?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2Flanguage-learning.jpg&signature=a32a0c680be5d31e7d2c46d40824dd96",
+      "publishedAt":"2022-07-31T20:50:54Z",
+      "content":"This article is part of our coverage of the latest in AI research.\r\nLarge language models like GPT-3 have advanced to the point that it has become difficult to measure the limits of their capabilitie… [+10975 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":".cult",
+      "title":"Don't fall for the hype — 6 ways to evaluate a crypto project",
+      "description":"This article was originally published on .cult by Michiel Mulders. .cult is a Berlin-based community platform for developers. We write about all things career-related, make original ...",
+      "url":"http://thenextweb.com/news/dont-fall-for-the-hype-6-ways-to-evaluate-a-crypto-project",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/hardfork?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-2-4.jpg&signature=5d4febf7b3e1762d520d25be0de34ef4",
+      "publishedAt":"2022-07-31T16:03:53Z",
+      "content":"This article was originally published on .cult by Michiel Mulders. .cult is a Berlin-based community platform for developers. We write about all things career-related, make original documentaries, an… [+7097 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":".cult",
+      "title":"Here are the average salaries for data scientists across Europe in 2022",
+      "description":"This article was originally published on .cult by Louis Minvielle. .cult is a Berlin-based community platform for developers. We write about all things career-related, make original ...",
+      "url":"http://thenextweb.com/news/average-salaries-data-scientists-europe-2022",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-1-9.jpg&signature=3635397412e9cd45a1cae9c7ac639d31",
+      "publishedAt":"2022-07-30T16:00:53Z",
+      "content":"This article was originally published on .cult by Louis Minvielle. .cult is a Berlin-based community platform for developers. We write about all things career-related, make original documentaries, an… [+3983 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"Cate Lawrence",
+      "title":"Why wind turbines are not as green as you think",
+      "description":"The wind is great for producing electricity without generating greenhouse gas emissions. But there’s a dirty secret — what happens to turbines at the end of their life? \r\n\r\nThis ...",
+      "url":"http://thenextweb.com/news/wind-turbines-need-critical-end-of-life-planning",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/shift?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-16.png&signature=07dfd0a21a4a24094096d0cc37fea333",
+      "publishedAt":"2022-07-29T14:41:29Z",
+      "content":"The wind is great for producing electricity without generating greenhouse gas emissions. But theres a dirty secret what happens to turbines at the end of their life? \r\nThis week, a study by the Unive… [+3983 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"Ben Marks and Rafael Museri",
+      "title":"Study: Just how many remote workers are actually lonely?",
+      "description":"Human beings are inherently social creatures, having existed in close-knit hunter-gatherer groups for most of our 200,000-year history.\r\n\r\nNow we live in a world that is more connected ...",
+      "url":"http://thenextweb.com/news/study-just-how-many-remote-workers-are-actually-lonely",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-5.jpg&signature=5e6ca60cd3058a0f5a4ab61ad62ec0b4",
+      "publishedAt":"2022-07-28T13:09:53Z",
+      "content":"Human beings are inherently social creatures, having existed in close-knit hunter-gatherer groups for most of our 200,000-year history.\r\nNow we live in a world that is more connected than ever. 5 bil… [+6600 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"Ioanna Lykiardopoulou",
+      "title":"Meta turns to Reels and the metaverse to recover from its first ever revenue loss",
+      "description":"For the first time ever since going public in 2007, Meta (aka Facebook) reported a decline in quarterly revenue year over year. The company’s revenue was $28.82 billion — a 1% decrease ...",
+      "url":"http://thenextweb.com/news/meta-turns-to-reels-and-metaverse-to-recover-from-first-ever-revenue-loss",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/plugged?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FZuckerberg.jpg&signature=6e7c86aa9ddd5c0838e4274aa1b292fb",
+      "publishedAt":"2022-07-28T12:42:38Z",
+      "content":"For the first time ever since going public in 2007, Meta (aka Facebook) reported a decline in quarterly revenue year over year. The companys revenue was $28.82 billion a 1% decrease from $29.07 billi… [+4488 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"The Conversation",
+      "title":"Russia’s reportedly building a satellite-blinding laser — an expert explains",
+      "description":"The basic idea would be to dazzle the optical sensors of other nations’ spy satellites by flooding them with laser light.",
+      "url":"http://thenextweb.com/news/russia-building-a-satellite-blinding-laser-expert-technology",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2Flaser.jpg&signature=54c9acd5949bc0fb5e004dd1b2ca4799",
+      "publishedAt":"2022-07-28T12:16:52Z",
+      "content":"Russia is building a new ground-based laser facility for interfering with satellites orbiting overhead, according to a recent report in The Space Review. The basic idea would be to dazzle the optical… [+7430 chars]"
+    },
+    {
+      "source":{
+        "id":"the-next-web",
+        "name":"The Next Web"
+      },
+      "author":"Thomas Macaulay",
+      "title":"Terrifying or inspiring? Saudi Arabia unveils plan for 170km-long city",
+      "description":"Saudi Arabia may be famous for medieval barbarism and oil, but the kingdom is rebranding as a futuristic ecotopia.\r\n\r\nThe latest showcase of this unlikely vision is The Line, a mirrored ...",
+      "url":"http://thenextweb.com/news/saudi-arabia-unveils-designs-for-the-line-vision-a-170km-long-200m-wide-city",
+      "urlToImage":"https://img-cdn.tnwcdn.com/image/neural?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F07%2FUntitled-design-3-2.jpg&signature=2783c26c7ee37a0a95a5c9a0ad79d7cf",
+      "publishedAt":"2022-07-27T16:38:05Z",
+      "content":"Saudi Arabia may be famous for medieval barbarism and oil, but the kingdom is rebranding as a futuristic ecotopia.\r\nThe latest showcase of this unlikely vision is The Line, a mirrored city thats 500m… [+3279 chars]"
+    }
+  ]
+}

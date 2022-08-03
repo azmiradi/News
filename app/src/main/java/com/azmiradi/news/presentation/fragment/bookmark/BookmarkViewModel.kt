@@ -20,6 +20,9 @@ class BookmarkViewModel @Inject constructor(
 ) :
     ViewModel() {
 
+    init {
+        geBookmark()
+    }
     private var job: Job? = null
     private val _allNewsState = MutableLiveData<List<Article>>(ArrayList())
     val allNewsState: LiveData<List<Article>> = _allNewsState

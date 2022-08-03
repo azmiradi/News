@@ -23,7 +23,10 @@ class HomeViewModel @Inject constructor(
     private val _allNewsState = MutableLiveData(DataState<Map<String, List<Article>?>>())
     val allNewsState: LiveData<DataState<Map<String, List<Article>?>>> = _allNewsState
 
-    fun getNews() {
+    init {
+        getNews()
+    }
+    private fun getNews() {
         _allNewsState.value = DataState(true)
         val responseDataMap = HashMap<String, List<Article>?>()
         val allEgyptNews = getNewsUseCase(country = "eg")

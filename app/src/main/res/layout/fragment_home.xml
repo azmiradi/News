@@ -7,82 +7,85 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".presentation.fragment.home.HomeFragment">
-
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:visibility="gone"
-            android:id="@+id/progress"
-            app:layout_constraintStart_toStartOf="parent"
-            android:theme="@style/Theme.News.WhiteAccent"
-            />
-
-        <TextView
-            android:id="@+id/error_message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            android:gravity="center"
-            android:textSize="@dimen/_15sdp"
-            android:layout_margin="@dimen/_20sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/news_title"
+        android:fillViewport="true">
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/noto_bold"
-            android:gravity="start"
-            android:padding="@dimen/_10sdp"
-            android:visibility="gone"
-            android:text="@string/news"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toTopOf="parent"            />
+            tools:context=".presentation.fragment.home.HomeFragment">
 
-        <com.example.moeidbannerlibrary.banner.BannerLayout
-            android:id="@+id/banner"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_margin="@dimen/_10sdp"
-            app:autoPlaying="true"
-            app:centerScale="1"
-            app:itemSpace="50"
-            app:layout_constraintTop_toBottomOf="@+id/news_title"
-            app:moveSpeed="0.5"
-            app:showIndicator="true" />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                android:id="@+id/progress"
+                app:layout_constraintStart_toStartOf="parent"
+                android:theme="@style/Theme.News.WhiteAccent"
+                />
 
-        <TextView
-            android:id="@+id/latest_news"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/noto_medium"
-            android:gravity="start"
-            android:visibility="gone"
-            android:padding="@dimen/_10sdp"
-            android:text="@string/latest_news"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp"
-            app:layout_constraintTop_toBottomOf="@+id/banner" />
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:layout_margin="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="@dimen/_10sdp"
-            android:id="@+id/latest_news_recycler"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/latest_news"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_bold"
+                android:gravity="start"
+                android:padding="@dimen/_10sdp"
+                android:visibility="gone"
+                android:text="@string/news"
+                 android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"            />
+
+            <com.example.moeidbannerlibrary.banner.BannerLayout
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="@dimen/_10sdp"
+                app:autoPlaying="true"
+                app:centerScale="1"
+                app:itemSpace="50"
+                app:layout_constraintTop_toBottomOf="@+id/news_title"
+                app:moveSpeed="0.5"
+                app:showIndicator="true" />
+
+            <TextView
+                android:id="@+id/latest_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_medium"
+                android:gravity="start"
+                android:visibility="gone"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/latest_news"
+                 android:textSize="@dimen/_20ssp"
+                app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/latest_news_recycler"
+                 app:layout_constraintTop_toBottomOf="@+id/latest_news"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
 </layout>

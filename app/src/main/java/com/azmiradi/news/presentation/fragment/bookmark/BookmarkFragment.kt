@@ -25,7 +25,6 @@ class BookmarkFragment : BaseFragment<FragmentBookmarkBinding>
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupAdaptor()
         handleUI()
         observeData()
@@ -53,8 +52,6 @@ class BookmarkFragment : BaseFragment<FragmentBookmarkBinding>
 
 
     override fun observeData() {
-        viewModel.geBookmark()
-
         viewModel.allNewsState.observe(requireActivity()) {
             if (it.isEmpty()) {
                 binding.errorMessage.visibility = View.VISIBLE

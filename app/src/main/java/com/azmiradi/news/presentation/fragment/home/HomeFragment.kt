@@ -1,9 +1,11 @@
 package com.azmiradi.news.presentation.fragment.home
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
+import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,9 +32,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     @Inject
     lateinit var latestNewsAdapter: LatestNewsAdapter
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         setupAdaptor()
         handleUI()
         observeData()
@@ -66,8 +68,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
 
     override fun observeData() {
-        viewModel.getNews()
-
         viewModel.allNewsState.observe(requireActivity()) {
             if (it.isLoading) {
                 startRequest()
@@ -103,8 +103,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             binding.errorMessage.text=it
             return
         }
-        binding.latestNews.visibility = GONE
-        binding.newsTitle.visibility = GONE
+        binding.latestNews.visibility = VISIBLE
+        binding.newsTitle.visibility = VISIBLE
     }
 
 }

@@ -36,8 +36,9 @@ class GetNewsUseCase @Inject constructor(private val repository: NewsRepository)
 
         } catch (http: HttpException) {
             throw Exception(http.message ?: "something is wrong!, try again")
+
         } catch (io: IOException) {
-            throw Exception(io.message ?: "something is wrong!, try again")
+            throw Exception("No Internet Connection \n ${io.message}" )
         }
     }.flowOn(Dispatchers.IO)
 }
